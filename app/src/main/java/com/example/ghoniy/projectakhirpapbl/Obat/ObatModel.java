@@ -6,6 +6,8 @@ public class ObatModel {
     private String gejala;
     private int gambarObat;
 
+    public ObatModel(){}
+
     public ObatModel(String namaObat, String penjelasan, String gejala, int gambarObat) {
         this.namaObat = namaObat;
         this.penjelasan = penjelasan;

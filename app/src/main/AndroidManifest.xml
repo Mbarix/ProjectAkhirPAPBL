@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ghoniy.projectakhirpapbl">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -24,6 +27,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Penyakit.SearchPenyakitActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/PurpleActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Penyakit.PenyakitActivity"
+            android:parentActivityName=".Penyakit.SearchPenyakitActivity"
+            android:theme="@style/PurpleActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Penyakit.SearchPenyakitActivity" />
         </activity>
     </application>
 

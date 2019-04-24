@@ -7,9 +7,12 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 import com.example.ghoniy.projectakhirpapbl.Obat.ObatActivity;
+import com.example.ghoniy.projectakhirpapbl.Penyakit.SearchPenyakitActivity;
 
 public class MainActivity extends AppCompatActivity {
     private CardView cariPenyakit, cariObat, cariRumahSakit;
+    private Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         cariPenyakit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                intent = new Intent(view.getContext(), SearchPenyakitActivity.class);
+                view.getContext().startActivity(intent);
             }
         });
 
@@ -31,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         cariObat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), ObatActivity.class);
+                intent = new Intent(view.getContext(), ObatActivity.class);
                 view.getContext().startActivity(intent);
             }
         });
