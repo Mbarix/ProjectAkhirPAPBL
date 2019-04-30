@@ -10,5 +10,7 @@
         android:id="@+id/recyclerViewPenyakit"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/obat"/>
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        tools:listitem="@layout/penyakit"/>
 </LinearLayout>

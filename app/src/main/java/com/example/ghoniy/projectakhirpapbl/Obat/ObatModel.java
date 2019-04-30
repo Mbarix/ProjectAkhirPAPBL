@@ -4,11 +4,11 @@ public class ObatModel {
     private String namaObat;
     private String penjelasan;
     private String gejala;
-    private int gambarObat;
+    private String gambarObat;
 
     public ObatModel(){}
 
-    public ObatModel(String namaObat, String penjelasan, String gejala, int gambarObat) {
+    public ObatModel(String namaObat, String penjelasan, String gejala, String gambarObat) {
         this.namaObat = namaObat;
         this.penjelasan = penjelasan;
         this.gejala = gejala;
@@ -27,7 +27,7 @@ public class ObatModel {
         this.gejala = gejala;
     }
 
-    public void setGambarObat(int gambarObat) {
+    public void setGambarObat(String gambarObat) {
         this.gambarObat = gambarObat;
     }
 
@@ -43,7 +43,7 @@ public class ObatModel {
         return gejala;
     }
 
-    public int getGambarObat() {
+    public String getGambarObat() {
         return gambarObat;
     }
 }

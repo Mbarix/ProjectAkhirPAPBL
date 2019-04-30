@@ -8,15 +8,17 @@
     android:paddingTop="4dp"
     android:paddingBottom="6dp"
     android:paddingRight="6dp"
-    android:paddingLeft="6dp">
+    android:paddingLeft="6dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/background_card">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardViewObat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        card_view:cardBackgroundColor="#FFFFFF"
-        card_view:cardCornerRadius="4dp"
-        card_view:cardElevation="4dp">
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,21 +31,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nama Obat"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#e94740"/>
 
             <TextView
                 android:id="@+id/untukPenyakit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
-                android:textSize="14dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
-                android:text="Penyakit :" />
+                android:text="Penyakit :"
+                android:fontFamily="sans-serif"/>
             <TextView
+                android:id="@+id/macamPenyakit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
                 android:text="nama penyakit, nama penyakit, nama penyakit, nama penyakit, nama penyakit, nama penyakit."/>
         </LinearLayout>
 

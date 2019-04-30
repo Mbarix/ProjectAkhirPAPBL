@@ -16,7 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/obat_example"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,10 +45,10 @@
     </android.support.constraint.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textPenjelasan"
+        android:id="@+id/textPenjelasanDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16dp"
+        android:textSize="20dp"
         android:layout_margin="6dp"
         android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
 
@@ -58,16 +57,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="20dp"
         android:layout_marginStart="6dp"
         android:layout_marginTop="25dp"
-        android:text="Gejala :" />
+        android:text="Untuk penyakit :"
+        android:textColor="#3498db"/>
 
     <TextView
-        android:id="@+id/textGejalaObatDetail"
+        android:id="@+id/textMacamPenyakitDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16dp"
+        android:textSize="18dp"
         android:layout_marginStart="6dp"
+        android:textColor="#3498db"
         android:text="nama penyakit, nama penyakit, nama penyakit, nama penyakit, nama penyakit, nama penyakit." />
 </LinearLayout>

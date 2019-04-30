@@ -23,10 +23,18 @@
         <activity
             android:name=".Obat.ObatActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/WhiteActivityTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Obat.DetailObatActivity"
+            android:parentActivityName=".Obat.ObatActivity"
+            android:theme="@style/WhiteActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Obat.ObatActivity" />
         </activity>
         <activity
             android:name=".Penyakit.SearchPenyakitActivity"
@@ -39,7 +47,7 @@
         <activity
             android:name=".Penyakit.PenyakitActivity"
             android:parentActivityName=".Penyakit.SearchPenyakitActivity"
-            android:theme="@style/PurpleActivityTheme">
+            android:theme="@style/WhiteActivityTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Penyakit.SearchPenyakitActivity" />

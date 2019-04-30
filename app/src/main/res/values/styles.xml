@@ -28,4 +28,17 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="WhiteActivityTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">#bdc3c7</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="InputTextCustom" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">7.5dp</item>
+        <item name="boxCornerRadiusBottomStart">7.5dp</item>
+        <item name="boxCornerRadiusTopEnd">7.5dp</item>
+        <item name="boxCornerRadiusTopStart">7.5dp</item>
+    </style>
 </resources>
