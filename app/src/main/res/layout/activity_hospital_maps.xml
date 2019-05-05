@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HospitalMapsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".HospitalMapsActivity" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bottom_sheet_info"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="#ffff"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="65dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_drag_handle_black_24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingBottom="16dp"
+                android:text="Info Rumah Sakit"
+                android:textColor="#0277bd"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Nama Rumah Sakit"
+                android:textColor="#212121"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_hospital"
+                android:backgroundTint="#ffff"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/hospital"
+                />
+            <TextView
+                android:id="@+id/txt_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="3dp"
+                android:paddingHorizontal="10dp"
+                android:textStyle="bold"
+                android:text="Alamat Rumah Sakit"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txt_web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="3dp"
+                android:paddingHorizontal="10dp"
+                android:textStyle="bold"
+                android:textColor="#2979ff"
+                android:text="Web Rumah Sakit"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txt_tlp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="3dp"
+                android:paddingHorizontal="10dp"
+                android:textStyle="bold"
+                android:text="Nomor Rumah Sakit"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txt_operasional"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="3dp"
+                android:paddingHorizontal="10dp"
+                android:textStyle="bold"
+                android:text="Jam Operasional"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
