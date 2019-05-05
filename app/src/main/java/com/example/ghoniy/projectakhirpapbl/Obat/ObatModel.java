@@ -1,10 +1,11 @@
 package com.example.ghoniy.projectakhirpapbl.Obat;
 
+//class buat nampung nilai tentang activity obat
 public class ObatModel {
-    private String namaObat;
-    private String penjelasan;
-    private String gejala;
-    private String gambarObat;
+    private String namaObat; //nyimpen nama obat
+    private String penjelasan; //penjelasan obat yang bakal ditampilin di detail obat
+    private String gejala; //gejala apa aja yang terkait dengan obat
+    private String gambarObat; //gambar obat yang bakal ditampilin di detail obat
 
     public ObatModel(){}
 

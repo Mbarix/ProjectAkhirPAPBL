@@ -18,6 +18,8 @@ public class DetailObatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_obat);
 
+        //jadi kan sebelum activity ini dibuat melalui intent, kita mengirim data
+        //script ini buat nangkep data tersebut
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
             if(extras == null) {
@@ -38,15 +40,18 @@ public class DetailObatActivity extends AppCompatActivity {
             gambarObat = (String) savedInstanceState.getSerializable("gambarObat");
         }
 
+        //inisialisasi view
         imageObat = (ImageView) findViewById(R.id.gambarObat);
         textNamaObat = (TextView) findViewById(R.id.textNamaObatDetail);
         textPenjelasanObat = (TextView) findViewById(R.id.textPenjelasanDetail);
         textMacamPenyakit = (TextView) findViewById(R.id.textMacamPenyakitDetail);
 
+        //set nilai ke view
         textNamaObat.setText(namaObat);
         textPenjelasanObat.setText(penjelasan);
         textMacamPenyakit.setText(macamPenyakit);
-        //glide library for handle image
+
+        //library glide buat nampilin gambar lewat url yang disimpen di variabel gambarObat
         Glide.with(imageObat.getContext())
                 .load(gambarObat)
                 .into(imageObat);
